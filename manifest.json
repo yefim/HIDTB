@@ -1,0 +1,11 @@
+{
+  "name": "Have I Downloaded This Before?",
+  "version": "0.1",
+  "permissions": [
+    "downloads",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "manifest_version": 2
+}
+
