@@ -6,6 +6,9 @@
     "http://*/*",
     "https://*/*"
   ],
+  "background": {
+    "scripts": ["haveidownloadedthisbefore.js"]
+  },
   "manifest_version": 2
 }
 
