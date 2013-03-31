@@ -1,3 +1,10 @@
 chrome.downloads.onCreated.addListener (downloadItem) ->
-  alert 'item is downloading'
-  console.log downloadItem
+  chrome.downloads.search
+    url: downloadItem.url
+    exists: true
+    startedBefore: downloadItem.startTime
+    , (downloadItems) ->
+      if downloadItems.length
+        console.log "You've already downloaded this"
+      else
+        console.log "there are no duplicates"
