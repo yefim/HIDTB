@@ -10,9 +10,9 @@ chrome.downloads.onCreated.addListener (downloadItem) ->
           "Duplicate Found!"
           "You've already downloaded #{downloadItem.url}. Click to delete"
         )
-        notification.onclick = ->
+        notification.onclick = (e) =>
+          console.log e
           chrome.downloads.erase(id: downloadItem.id)
         notification.show()
         previous = downloadItems[0]
-        console.log previous
         # chrome.downloads.show(previous.id)
