@@ -1,6 +1,9 @@
 {
   "name": "Have I Downloaded This Before?",
   "version": "0.1",
+  "icons": {"16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"},
   "minimum_chrome_version": "27.0.1448.0",
   "permissions": [
     "downloads",
