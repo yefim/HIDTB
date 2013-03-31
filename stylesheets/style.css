@@ -143,9 +143,17 @@
   font-weight: bold;
   font-size: 13px;
   font-family: helvetica, arial, sans-serif;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
 }
 
 #description {
   font-family: helvetica, arial, sans-serif;
+}
+
+#url {
+  font-size: 13px;
+  margin: 0;
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
