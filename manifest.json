@@ -1,6 +1,6 @@
 {
   "name": "Have I Downloaded This Before?",
-  "version": "0.1",
+  "version": "0.2",
   "icons": {"16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"},
