@@ -13,11 +13,7 @@ window.onload = ->
 
   document.getElementById('view').addEventListener 'click', ->
     chrome.downloads.erase(id: id)
-    try
       chrome.downloads.open view_id
-    catch chrome.runtime.lastError
-      alert("File cannot be opened")
-    finally
       window.close()
 
   document.getElementById('resume').addEventListener 'click', ->
