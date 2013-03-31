@@ -5,10 +5,8 @@ chrome.downloads.onCreated.addListener (downloadItem) ->
     startedBefore: downloadItem.startTime
     , (downloadItems) ->
       if downloadItems.length
-        notification = webkitNotifications.createNotification(
-          ""
-          "Duplicate Found!"
-          "You've already downloaded #{downloadItem.url}. Click to delete"
+        notification = webkitNotifications.createHTMLNotification(
+          'notification.html'
         )
         notification.onclick = (e) =>
           console.log e
