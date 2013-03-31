@@ -3,8 +3,7 @@ window.onload = ->
   [_, id, view_id, url] = query.match /id=(\d+)&view=(\d+)&url=(.*)/
   id = parseInt id, 10
   view_id = parseInt view_id, 10
-  url = unescape(url).substring(30)
-  url = url.replace(/^.*[\\\/]/, '')  # extract filename
+  url = unescape(url).replace(/^.*[\\\/]/, '')  # extract filename
 
   document.getElementById('url').innerHTML = url
 
