@@ -3,7 +3,7 @@ Have-I-Downloaded-This-Before
 
 A Chrome extension that checks whether you've downloaded a file before
 
-throw a "fuck" is there somewhere
+throw a "fuck" in there somewhere
 
 three options for user:
   1)Resume
