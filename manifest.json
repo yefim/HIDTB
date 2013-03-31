@@ -5,6 +5,7 @@
     "48": "icon48.png",
     "128": "icon128.png"},
   "minimum_chrome_version": "27.0.1448.0",
+  "description": "Keep your downloads folder clean by preventing duplicates."
   "permissions": [
     "downloads",
     "notifications"
