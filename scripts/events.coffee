@@ -9,7 +9,7 @@ window.onload = ->
     window.close()
 
   document.getElementById('view').addEventListener 'click', ->
-    chrome.downloads.erase(id: id, exists: true)
+    chrome.downloads.erase(id: id)
     chrome.downloads.show view_id
     window.close()
 
