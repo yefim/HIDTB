@@ -3,6 +3,7 @@ chrome.downloads.onCreated.addListener (downloadItem) ->
     url: downloadItem.url
     exists: true
     startedBefore: downloadItem.startTime
+    state: "complete"
     , (downloadItems) ->
       if downloadItems.length
         previous = downloadItems[0]
