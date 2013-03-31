@@ -1,5 +1,6 @@
 chrome.downloads.onCreated.addListener (downloadItem) ->
-  chrome.downloads.pause downloadItem.id, ->
+  id = downloadItem.id
+  chrome.downloads.pause id, ->
     chrome.downloads.search
       url: downloadItem.url
       exists: true
@@ -11,8 +12,10 @@ chrome.downloads.onCreated.addListener (downloadItem) ->
           url = escape downloadItem.url
           view_id = previous.id
           notification = webkitNotifications.createHTMLNotification(
-            "notification.html?id=#{downloadItem.id}&view=#{view_id}&url=#{url}"
+            "notification.html?id=#{id}&view=#{view_id}&url=#{url}"
           )
+          notification.onclose = ->
+            chrome.downloads.resume id
           notification.show()
         else
-          chrome.downloads.resume downloadItem.id
+          chrome.downloads.resume id
