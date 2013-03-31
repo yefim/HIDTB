@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
+    <style type="text/css" >
+      .button {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+        background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+        background-color:#ededed;
+        -moz-border-radius:13px;
+        -webkit-border-radius:13px;
+        border-radius:13px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        color:#777777;
+        font-family:arial;
+        font-size:12px;
+        font-weight:bold;
+        padding:8px 12px;
+        text-decoration:none;
+        text-shadow:1px 1px 3px #ffffff;
+      }
+      .button:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+        background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+        background-color:#dfdfdf;
+      }
+      .button:active {
+        position:relative;
+        top:1px;
+      }
       #title {
         font-weight: bold;
         font-size: 13px;
@@ -11,15 +39,15 @@
         font-family: helvetica, arial, sans-serif;
         font-size: 13px;
       }
-    </style> 
+    </style>
+    <script src="scripts/events.js"></script>
   </head>
   <body dir='ltr'>
     <div id='title'>You've Already Downloaded This!</div>
     <div id='description'>
-      You've already dowloaded this.
-      <button id='remove'>Remove this shit!</button>
-      <button id='view'>View in Folder</button>
-      <button id='resume'>Carry on!</button>
+      <button id='remove' class="button">Remove this shit!</button>
+      <button id='view' class="button">View in Folder</button>
+      <button id='resume' class="button">Carry on!</button>
     </div>
   </body>
 </html>
