@@ -18,4 +18,5 @@ window.onload = ->
     #window.close()
 
   document.getElementById('resume').addEventListener 'click', ->
+    chrome.downloads.resume id
     window.close()
