@@ -2,12 +2,11 @@
   "name": "Have I Downloaded This Before?",
   "version": "0.1",
   "permissions": [
-    "downloads",
-    "http://*/*",
-    "https://*/*"
+    "downloads"
   ],
   "background": {
-    "scripts": ["haveidownloadedthisbefore.js"]
+    "scripts": ["haveidownloadedthisbefore.js"],
+    "persistent": false
   },
   "manifest_version": 2
 }
