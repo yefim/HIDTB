@@ -8,7 +8,4 @@ chrome.downloads.onCreated.addListener (downloadItem) ->
         notification = webkitNotifications.createHTMLNotification(
           "notification.html?id=#{downloadItem.id}&view=#{downloadItems[0].id}"
         )
-        # chrome.downloads.erase(id: downloadItem.id)
         notification.show()
-        # previous = downloadItems[0]
-        # chrome.downloads.show(previous.id)
