@@ -13,8 +13,8 @@ window.onload = ->
 
   document.getElementById('view').addEventListener 'click', ->
     chrome.downloads.erase(id: id)
-      chrome.downloads.open view_id
-      window.close()
+    chrome.downloads.open view_id
+    window.close()
 
   document.getElementById('resume').addEventListener 'click', ->
     chrome.downloads.resume id
