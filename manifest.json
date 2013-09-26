@@ -13,8 +13,7 @@
     "notifications"
   ],
   "background": {
-    "scripts": ["scripts/haveidownloadedthisbefore.js"],
-    "persistent": false
+    "scripts": ["scripts/haveidownloadedthisbefore.js"]
   },
   "manifest_version": 2
 }
