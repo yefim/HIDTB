@@ -8,11 +8,11 @@ window.onload = ->
   document.getElementById('url').innerHTML = url
 
   document.getElementById('cancel').addEventListener 'click', ->
-    chrome.downloads.erase(id: id)
+    chrome.downloads.erase {id}
     window.close()
 
   document.getElementById('view').addEventListener 'click', ->
-    chrome.downloads.erase(id: id)
+    chrome.downloads.erase {id}
     chrome.downloads.open view_id
     window.close()
 
