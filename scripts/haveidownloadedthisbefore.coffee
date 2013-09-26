@@ -11,6 +11,8 @@ chrome.downloads.onCreated.addListener (downloadItem) ->
           previous = downloadItems[0]
           url = escape downloadItem.url
           view_id = previous.id
+          # should use the new and improved notifications API
+          # http://developer.chrome.com/extensions/notifications.html#method-create
           notification = webkitNotifications.createHTMLNotification(
             "notification.html?id=#{id}&view=#{view_id}&url=#{url}"
           )
