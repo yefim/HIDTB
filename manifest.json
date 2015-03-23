@@ -1,6 +1,6 @@
 {
   "name": "Have I Downloaded This Before?",
-  "version": "0.6",
+  "version": "1.0",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
@@ -10,6 +10,7 @@
   "description": "Keep your downloads folder clean by preventing duplicates.",
   "permissions": [
     "downloads",
+    "downloads.open",
     "notifications"
   ],
   "background": {
