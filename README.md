@@ -1,11 +1,6 @@
 Have I Downloaded This Before?
 =============================
 
-A Chrome extension that checks whether you've downloaded a file before
+Keep your downloads folder clean by preventing duplicates.
 
-throw a "fuck" in there somewhere
-
-three options for user:
-  * Cancel Download
-  * Open file
-  * Carry on
+Icons were created by [Martha Ormiston](http://thenounproject.com/term/continue/111852/) and [Arthur Shlain](http://thenounproject.com/term/folder/64349/) from the Noun Project.
