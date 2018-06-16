@@ -1,12 +1,14 @@
 {
+  "manifest_version": 2,
   "name": "Have I Downloaded This Before?",
-  "version": "1.0",
+  "short_name": "HIDTB",
+  "version": "2.0",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "minimum_chrome_version": "27.0.1448.0",
+  "minimum_chrome_version": "31.0",
   "description": "Keep your downloads folder clean by preventing duplicates.",
   "permissions": [
     "downloads",
@@ -14,7 +16,7 @@
     "notifications"
   ],
   "background": {
-    "scripts": ["scripts/haveidownloadedthisbefore.js"]
-  },
-  "manifest_version": 2
+    "scripts": ["src/have-i-downloaded-this-before.js"],
+    "persistent": true
+  }
 }
