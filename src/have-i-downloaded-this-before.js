@@ -1,4 +1,4 @@
-var debug = localStorage.getItem('debug') === true
+var debug = localStorage.getItem('debug') === 'true';
 
 debug && console.log('Binding event handlers...');
 
