@@ -9,7 +9,7 @@ chrome.downloads.onCreated.addListener(function(item) {
   debug && console.log(item.exists);
 
   chrome.downloads.pause(item.id, function() {
-    chrome.downloads.search({url: item.url, exists: true}, function(items) {
+    chrome.downloads.search({url: item.url, state: 'complete', exists: true}, function(items) {
       if (items.length) {
         chrome.notifications.create(['hidtb', items[0].id].join('|||'), {
           type: 'basic',
